@@ -1,0 +1,48 @@
+/*agrupacion flex imagen y lista*/
+header {
+  background-color: $color-primario;
+  color: $color-letra-header;
+
+  .logo {
+    margin-left: 1em;
+    width: 14em;
+    height: 4em;
+  }
+  @media only screen and (max-width: 600px) {
+    .logo {
+      margin-left: 0;
+      width: 10em;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    text-decoration: none;
+    color: $color-letra-header;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: flex-end;
+  }
+}
+/*activador de animación*/
+.nav-link:hover {
+  background: linear-gradient(100deg, $color-terciario, $color-primario);
+  background-size: 500%;
+  animation: gradiente 1s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/*animación del menú con gradiente*/
+@keyframes gradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

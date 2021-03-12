@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*fuente general de la página*/
+body {
+  font-family: "Work Sans", sans-serif;
+  /*background-color: #f3f5f7;*/
+}
+
+.marginMain {
+  margin: 1em;
+  overflow: hidden;
+}
+
+.container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*títulos principales*/
+.tituloIzquierda {
+  font-weight: 300;
+  line-height: 2;
+  color: $color-secundario;
+  margin-left: 1.9em;
+  @media only screen and (max-width: 600px) {
+    margin-left: 1em;
+  }
+}
+
+.tituloCentro {
+  color: $color-secundario;
+  font-weight: 300;
+  text-align: center;
+  margin: 2%;
+}

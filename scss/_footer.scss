@@ -1,0 +1,40 @@
+/*footer para páginas sin scroll*/
+.footer--fijo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    position: relative;
+  }
+}
+
+.footer--noabsolute {
+  position: relative !important;
+}
+
+.footer--norelative {
+  position: absolute !important;
+}
+
+/*footer para páginas con scroll */
+
+.footer {
+  background-color: $color-primario;
+  font-size: 1rem;
+  color: $color-letra-footer;
+  display: block;
+}
+
+.footer--relativo {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+
+  @media only screen and (max-width: 600px) {
+    .footer--relativo {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

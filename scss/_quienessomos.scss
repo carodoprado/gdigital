@@ -1,0 +1,31 @@
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-left: 4.9em;
+}
+
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    flex-direction: column-reverse;
+    margin-left: 0em;
+    padding-left: 2em;
+  }
+  .contenedor__texto {
+    width: 100%;
+  }
+  .contenedor__texto__p {
+    text-align: left;
+  }
+}
+.contenedor__image__img {
+  width: 100%;
+  justify-content: center;
+  margin-top: -7em;
+  @media screen and (max-width: 600px) {
+    margin-top: -1.5em;
+    margin-bottom: -2em;
+  }
+}

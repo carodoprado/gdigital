@@ -1,0 +1,273 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*fuente general de la página*/
+body {
+  font-family: "Work Sans", sans-serif;
+  /*background-color: #f3f5f7;*/ }
+
+.marginMain {
+  margin: 1em;
+  overflow: hidden; }
+
+.container {
+  margin-left: 0;
+  margin-right: 0; }
+
+/*títulos principales*/
+.tituloIzquierda {
+  font-weight: 300;
+  line-height: 2;
+  color: #e7454a;
+  margin-left: 1.9em; }
+  @media only screen and (max-width: 600px) {
+    .tituloIzquierda {
+      margin-left: 1em; } }
+
+.tituloCentro {
+  color: #e7454a;
+  font-weight: 300;
+  text-align: center;
+  margin: 2%; }
+
+/*agrupacion flex imagen y lista*/
+header {
+  background-color: #012d41;
+  color: white; }
+  header .logo {
+    margin-left: 1em;
+    width: 14em;
+    height: 4em; }
+  @media only screen and (max-width: 600px) {
+    header .logo {
+      margin-left: 0;
+      width: 10em; } }
+  header .navbar-light .navbar-nav .nav-link {
+    text-decoration: none;
+    color: white; }
+  header .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: flex-end; }
+
+/*activador de animación*/
+.nav-link:hover {
+  background: linear-gradient(100deg, #00e5b7, #012d41);
+  background-size: 500%;
+  animation: gradiente 1s ease-in-out;
+  animation-iteration-count: 1; }
+
+/*animación del menú con gradiente*/
+@keyframes gradiente {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+/*seccion página index*/
+.heroSection__background {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 599px;
+  /* no mas de 600px porque se alarga el video en eje Y */
+  position: relative;
+  background: #012d41;
+  overflow: hidden; }
+
+.heroSection__background__video {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  opacity: 0.5; }
+  @media only screen and (max-width: 600px) {
+    .heroSection__background__video {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      opacity: 0.5;
+      min-height: auto;
+      width: 290.037%;
+      min-width: 100vw; } }
+
+.contenido {
+  width: 100%;
+  height: auto;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  text-align: center; }
+  .contenido h1 {
+    color: white;
+    width: 100%;
+    font-size: 2.7rem;
+    line-height: 1.1;
+    font-weight: 500; }
+    .contenido h1 span {
+      display: inline-block; }
+  @media only screen and (max-width: 600px) {
+    .contenido {
+      top: 50%; }
+      .contenido h1 {
+        color: white;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 500;
+        text-align: center; } }
+
+/*texto página quienes somos*/
+.contenedor__texto {
+  width: 49%;
+  text-align: left;
+  margin-top: 2em;
+  font-size: large;
+  margin-right: 9em; }
+  @media only screen and (max-width: 600px) {
+    .contenedor__texto {
+      width: auto;
+      float: none; } }
+
+/*card de empresa*/
+.card {
+  height: 350px;
+  margin-top: 5%;
+  /*logo de la empresa */
+  /*botón ir a páginas de la empresa*/
+  /*logos de las empresas*/
+  /*único logo en png, ajuste de dimensiones*/ }
+  .card img {
+    height: auto;
+    min-height: 64px;
+    width: 150px; }
+  .card a {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e7454a;
+    color: white;
+    border: 1px solid grey; }
+  .card p {
+    min-height: 100px;
+    text-align: center;
+    max-height: 200px; }
+  .card .cardImage {
+    width: 100%;
+    text-align: center; }
+  .card #logolineaDigital {
+    min-height: 40px;
+    margin: 12px; }
+
+.contenedorBoton {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  margin-left: -1em; }
+
+/*pagina soluciones*/
+.contenedorTarjeta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 5em;
+  align-items: center;
+  width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .contenedorTarjeta {
+      flex-direction: column;
+      margin-left: 1.8em; } }
+
+.tarjeta {
+  margin-right: 5em; }
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-left: 4.9em; }
+
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    flex-direction: column-reverse;
+    margin-left: 0em;
+    padding-left: 2em; }
+  .contenedor__texto {
+    width: 100%; }
+  .contenedor__texto__p {
+    text-align: left; } }
+
+.contenedor__image__img {
+  width: 100%;
+  justify-content: center;
+  margin-top: -7em; }
+  @media screen and (max-width: 600px) {
+    .contenedor__image__img {
+      margin-top: -1.5em;
+      margin-bottom: -2em; } }
+
+.empresa {
+  margin-left: auto;
+  margin-right: auto; }
+
+/*botones del formulario*/
+.boton {
+  margin-top: 2%; }
+
+.formulario {
+  margin-left: 4em; }
+  @media only screen and (max-width: 600px) {
+    .formulario {
+      margin-left: 1em; } }
+
+.parrafoFormulario {
+  margin-left: 4em; }
+  @media only screen and (max-width: 600px) {
+    .parrafoFormulario {
+      margin-left: 1em; } }
+
+/*footer para páginas sin scroll*/
+.footer--fijo {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .footer--fijo {
+      position: relative; } }
+
+.footer--noabsolute {
+  position: relative !important; }
+
+.footer--norelative {
+  position: absolute !important; }
+
+/*footer para páginas con scroll */
+.footer {
+  background-color: #012d41;
+  font-size: 1rem;
+  color: white;
+  display: block; }
+
+.footer--relativo {
+  position: relative;
+  width: 100%;
+  bottom: 0; }
+  @media only screen and (max-width: 600px) {
+    .footer--relativo .footer--relativo {
+      position: absolute;
+      bottom: 0; } }

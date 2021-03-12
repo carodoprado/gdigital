@@ -1,0 +1,19 @@
+/*botones del formulario*/
+
+.boton {
+  margin-top: 2%;
+}
+
+.formulario {
+  margin-left: 4em;
+  @media only screen and (max-width: 600px) {
+    margin-left: 1em;
+  }
+}
+
+.parrafoFormulario {
+  margin-left: 4em;
+  @media only screen and (max-width: 600px) {
+    margin-left: 1em;
+  }
+}
