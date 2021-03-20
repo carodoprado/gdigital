@@ -1,7 +1,11 @@
 /*botones del formulario*/
 
 .boton {
+  
   margin-top: 2%;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 .formulario {
@@ -16,4 +20,9 @@
   @media only screen and (max-width: 600px) {
     margin-left: 1em;
   }
+}
+form{
+  background: white;
+  padding: 6em;
+width: 100%;
 }

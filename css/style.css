@@ -12,6 +12,9 @@ body {
   margin: 1em;
   overflow: hidden; }
 
+.soluciones {
+  height: 90vh; }
+
 .container {
   margin-left: 0;
   margin-right: 0; }
@@ -182,10 +185,17 @@ header {
 .contenedorTarjeta {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin-left: 5em;
   align-items: center;
-  width: 100%; }
+  justify-content: space-between;
+  width: 90%; }
+  .contenedorTarjeta .card {
+    padding: 2em; }
+  .contenedorTarjeta h5 {
+    text-align: center;
+    color: #012d41; }
+  .contenedorTarjeta .card-text {
+    font-size: large; }
   @media only screen and (max-width: 600px) {
     .contenedorTarjeta {
       flex-direction: column;
@@ -193,6 +203,11 @@ header {
 
 .tarjeta {
   margin-right: 5em; }
+
+/*icono cards pagina soluciones*/
+.fal {
+  text-align: center;
+  color: #00e5b7; }
 
 .contenedor {
   display: flex;
@@ -227,7 +242,10 @@ header {
 
 /*botones del formulario*/
 .boton {
-  margin-top: 2%; }
+  margin-top: 2%;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex; }
 
 .formulario {
   margin-left: 4em; }
@@ -240,6 +258,11 @@ header {
   @media only screen and (max-width: 600px) {
     .parrafoFormulario {
       margin-left: 1em; } }
+
+form {
+  background: white;
+  padding: 6em;
+  width: 100%; }
 
 /*footer para páginas sin scroll*/
 .footer--fijo {
@@ -271,3 +294,57 @@ header {
     .footer--relativo .footer--relativo {
       position: absolute;
       bottom: 0; } }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #012d41;
+  padding: 25px 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: white; }
+  .footer div {
+    width: 33%; }
+    .footer div img {
+      margin-left: 5em;
+      margin-top: 2em;
+      width: 60%;
+      height: 60%; }
+  .footer li p {
+    margin-top: 0.5em;
+    margin-bottom: 0 !important; }
+  .footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -2em;
+    width: 10em; }
+  .footer a {
+    color: white; }
+  .footer .footerTitulo {
+    font-weight: 400;
+    font-size: x-large; }
+  .footer .contenedorRedes div {
+    width: 100%; }
+  .footer .contenedorRedes .footerTitulo {
+    margin-top: 0.5em !important; }
+
+.backgroundImage {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='760' preserveAspectRatio='none' viewBox='0 0 1600 760'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1079%26quot%3b)' fill='none'%3e%3crect width='1600' height='760' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M -447.4818993446062%2c554 C -340.68%2c490.6 -127.08%2c223.6 86.51810065539385%2c237 C 300.12%2c250.4 406.92%2c648 620.5181006553938%2c621 C 834.12%2c594 940.92%2c130.2 1154.518100655394%2c102 C 1368.12%2c73.8 1599.42%2c473.8 1688.518100655394%2c480 C 1777.61%2c486.2 1617.7%2c202.4 1600%2c133' stroke='rgba(231%2c 69%2c 74%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -156.82321141802174%2c196 C -50.02%2c246 163.58%2c438 377.17678858197826%2c446 C 590.78%2c454 697.58%2c243.6 911.1767885819783%2c236 C 1124.78%2c228.4 1231.58%2c430.8 1445.1767885819781%2c408 C 1658.78%2c385.2 1948.21%2c74.2 1979.1767885819781%2c122 C 2010.14%2c169.8 1675.84%2c542 1600%2c647' stroke='rgba(150%2c 148%2c 149%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -782.0416886864998%2c98 C -675.24%2c171.6 -461.64%2c441.4 -248.04168868649978%2c466 C -34.44%2c490.6 72.36%2c224.6 285.9583113135002%2c221 C 499.56%2c217.4 606.36%2c447.4 819.9583113135002%2c448 C 1033.56%2c448.6 1197.95%2c233.8 1353.9583113135002%2c224 C 1509.97%2c214.2 1550.79%2c364 1600%2c399' stroke='rgba(1%2c 45%2c 65%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -75.54152410818557%2c88 C 31.26%2c180 244.86%2c537.2 458.45847589181443%2c548 C 672.06%2c558.8 778.86%2c143.2 992.4584758918145%2c142 C 1206.06%2c140.8 1312.86%2c543 1526.4584758918145%2c542 C 1740.06%2c541 2045.75%2c141.4 2060.4584758918145%2c137 C 2075.17%2c132.6 1692.09%2c443.4 1600%2c520' stroke='rgba(0%2c 229%2c 183%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -370.94413647962654%2c684 C -264.14%2c568.4 -50.54%2c136 163.0558635203735%2c106 C 376.66%2c76 483.46%2c516.2 697.0558635203735%2c534 C 910.66%2c551.8 1017.46%2c207.6 1231.0558635203736%2c195 C 1444.66%2c182.4 1691.27%2c465.6 1765.0558635203736%2c471 C 1838.84%2c476.4 1633.01%2c271.8 1600%2c222' stroke='rgba(1%2c 45%2c 65%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1079'%3e%3crect width='1600' height='760' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); }
+
+.backgroundCurve {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='760' preserveAspectRatio='none' viewBox='0 0 1600 760'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1078%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c200 C 106.8%2c260.8 320.4%2c477.8 534%2c504 C 747.6%2c530.2 854.8%2c352 1068%2c331 C 1281.2%2c310 1493.6%2c385.4 1600%2c399L1600 760L0 760z' fill='rgba(1%2c 45%2c 65%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1078'%3e%3crect width='1600' height='760' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
+  padding: 0; }
+
+.backgroundAngle {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='760' preserveAspectRatio='none' viewBox='0 0 1600 760'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1080%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c760 C 320%2c650.2 1280%2c320.8 1600%2c211L1600 760L0 760z' fill='rgba(1%2c 45%2c 65%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1080'%3e%3crect width='1600' height='760' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: -1em 22em;
+  margin: 0;
+  padding: 0; }
