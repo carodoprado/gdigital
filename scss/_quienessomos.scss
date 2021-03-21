@@ -4,9 +4,17 @@
   width: 90%;
   align-content: center;
   justify-content: space-evenly;
-  margin-left: 4.9em;
+  margin-left: 4.5em;
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 4.1em;
+    align-items: center;
+  }
 }
 
+.contenedor__texto {
+  width: 60%;
+}
 @media only screen and (max-width: 600px) {
   .contenedor {
     flex-direction: column-reverse;
@@ -23,7 +31,7 @@
 .contenedor__image__img {
   width: 100%;
   justify-content: center;
-  margin-top: -7em;
+  margin-top: -6em;
   @media screen and (max-width: 600px) {
     margin-top: -1.5em;
     margin-bottom: -2em;

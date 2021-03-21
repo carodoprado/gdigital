@@ -1,10 +1,9 @@
 /*botones del formulario*/
 
 .boton {
-  
   margin-top: 2%;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   display: flex;
 }
 
@@ -17,12 +16,50 @@
 
 .parrafoFormulario {
   margin-left: 4em;
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 3.4em;
+  }
+
   @media only screen and (max-width: 600px) {
     margin-left: 1em;
   }
 }
-form{
+form {
   background: white;
-  padding: 6em;
-width: 100%;
+  padding: 4em;
+  width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+
+    margin-bottom: 2em;
+    padding-left: 1em;
+  }
+}
+
+.contenedorFormulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .imagenContacto {
+    margin-left: 1em;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+      .imagenContacto {
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
 }

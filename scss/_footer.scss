@@ -1,43 +1,3 @@
-/*footer para páginas sin scroll*/
-.footer--fijo {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  @media only screen and (max-width: 600px) {
-    position: relative;
-  }
-}
-
-.footer--noabsolute {
-  position: relative !important;
-}
-
-.footer--norelative {
-  position: absolute !important;
-}
-
-/*footer para páginas con scroll */
-
-.footer {
-  background-color: $color-primario;
-  font-size: 1rem;
-  color: $color-letra-footer;
-  display: block;
-}
-
-.footer--relativo {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-
-  @media only screen and (max-width: 600px) {
-    .footer--relativo {
-      position: absolute;
-      bottom: 0;
-    }
-  }
-}
 .footer {
   display: flex;
   flex-direction: row;
@@ -46,7 +6,7 @@
   padding: 25px 50px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-bottom: 0px;
+  padding-bottom: 25px;
   margin-bottom: 0px;
   color: white;
   div {
@@ -88,4 +48,78 @@
       margin-top: 0.5em !important;
     }
   }
+
+  @media only screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+      width: 100%;
+      img {
+        margin-left: 0;
+        margin-top: 2em;
+        width: 100%;
+        height: 60%;
+      }
+    }
+
+    .contenedorRedes {
+      margin-left: 2em;
+      div {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      div {
+        width: 100%;
+        img {
+          margin-left: 0;
+          margin-top: 2em;
+          width: 100%;
+          height: 60%;
+        }
+      }
+      ul {
+        margin-left: -1em;
+      }
+      .contenedorRedes {
+        margin-left: 1em;
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+      width: 100%;
+      img {
+        margin-left: 0;
+        margin-top: 2em;
+        width: 100%;
+        height: 60%;
+      }
+    }
+    ul {
+      margin-left: -1em;
+    }
+    .contenedorRedes {
+      margin-left: 1em;
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  
 }

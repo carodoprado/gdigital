@@ -58,27 +58,29 @@
   flex-direction: row;
   margin-left: 5em;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
 
-  .card{
-
+  .card {
     padding: 2em;
   }
 
-  h5{
-
-  text-align: center;
-  color: $color-primario;
+  h5 {
+    text-align: center;
+    color: $color-primario;
   }
 
-  .card-text{
-
+  .card-text {
     font-size: large;
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-    margin-left: 1.8em;
   }
 }
 
@@ -88,7 +90,35 @@
 
 /*icono cards pagina soluciones*/
 .fal {
-
   text-align: center;
   color: $color-terciario;
+}
+
+/*Animaciones de las cards*/
+.delayUno {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+}
+
+.delayDos {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+}
+
+.delayTres {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+}
+
+/*Animación cards páginas empresas*/
+
+@for $i from 1 through 6 {
+  .delay-#{$i} {
+    -webkit-animation-delay: (0.1s + $i/10);
+    -moz-animation-delay: (0.1s + $i/10);
+    -o-animation-delay: (0.1s + $i/10);
+  }
 }
