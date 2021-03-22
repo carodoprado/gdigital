@@ -359,6 +359,18 @@ form {
         text-align: center; }
         .contenedorFormulario .row .imagenContacto img {
           width: 50%; } }
+  @media only screen and (max-width: 1200px) {
+    .contenedorFormulario .row {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center; }
+      .contenedorFormulario .row .imagenContacto {
+        text-align: center; }
+        .contenedorFormulario .row .imagenContacto img {
+          width: 50%; }
+      .contenedorFormulario .row form {
+        padding: 3em; } }
 
 .footer {
   display: flex;

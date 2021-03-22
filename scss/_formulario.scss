@@ -62,4 +62,24 @@ form {
       }
     }
   }
+
+  @media only screen and (max-width: 1200px) {
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+      .imagenContacto {
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+
+      form {
+        padding: 3em;
+      }
+    }
+  }
 }
