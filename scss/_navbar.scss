@@ -8,6 +8,10 @@ header {
     width: 14em;
     height: 4em;
   }
+
+  .nav-link {
+    margin-bottom: 2px;
+  }
   @media only screen and (max-width: 600px) {
     .logo {
       margin-left: 0;
@@ -25,24 +29,16 @@ header {
     align-items: flex-end;
   }
 }
-/*activador de animación*/
 .nav-link:hover {
-  background: linear-gradient(100deg, $color-terciario, $color-primario);
-  background-size: 500%;
-  animation: gradiente 1s ease-in-out;
-  animation-iteration-count: 1;
+  margin-bottom: 0px;
 }
-
-/*animación del menú con gradiente*/
-@keyframes gradiente {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+/*activador de animación*/
+.nav-link:hover::after {
+  content: "";
+  border-bottom: 2px solid $color-terciario;
+  position: relative;
+  bottom: 0;
+  display: block;
+  overflow: hidden;
+  z-index: 0;
 }

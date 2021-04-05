@@ -11,11 +11,9 @@ body {
 
 .marginMain {
   margin: 1em;
-  
 }
 
- .soluciones{
-
+.soluciones {
   margin-bottom: 3em;
 }
 .container {
@@ -40,6 +38,12 @@ body {
   text-align: center;
   margin: 2%;
 }
-.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
   max-width: 1900px;
+  overflow: hidden;
 }
