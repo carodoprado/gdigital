@@ -319,7 +319,7 @@ header {
 
 /*botones del formulario*/
 .boton {
-  margin-top: 2%;
+  margin-top: 4%;
   text-align: center;
   justify-content: flex-end;
   display: flex; }
